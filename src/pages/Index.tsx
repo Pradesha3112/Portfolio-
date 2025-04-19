@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase } from "lucide-react";
+
+import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
