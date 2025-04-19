@@ -156,14 +156,6 @@ const Index = () => {
                 >
                   GitHub Repository
                 </a>
-                <a 
-                  href="https://marvelous-stroopwafel-8d90d6.netlify.app" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:underline"
-                >
-                  Live Demo
-                </a>
               </div>
             </Card>
             <Card className="p-6">
