@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,15 @@
 
   body {
     @apply bg-[#F1F0FB] text-foreground;
+  }
+}
+
+@layer components {
+  .custom-button {
+    @apply bg-custom-button text-custom-buttonText;
+  }
+
+  .custom-input {
+    @apply text-custom-inputText border-black;
   }
 }
