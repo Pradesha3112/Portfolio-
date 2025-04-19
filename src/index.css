@@ -96,7 +96,7 @@
   }
 
   body {
-    @apply bg-[#F1F0FB] text-custom-text;
+    @apply bg-gradient-to-br from-[#FFA500]/90 to-[#FF8C00]/90 text-custom-text min-h-screen;
   }
 }
 

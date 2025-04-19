@@ -6,11 +6,10 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#F1F0FB] text-custom-text">
+    <div className="min-h-screen text-custom-text">
       {/* Hero Section with Navigation */}
       <header className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FFA500]/90 to-[#FF8C00]/90" />
-        <div className="relative container mx-auto px-4 pt-6">
+        <div className="container mx-auto px-4 pt-6">
           <Navigation />
           <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-8">
             <div className="text-custom-text space-y-6 max-w-2xl">
