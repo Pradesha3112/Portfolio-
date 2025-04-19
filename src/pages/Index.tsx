@@ -1,3 +1,4 @@
+
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -31,9 +32,10 @@ const Index = () => {
           </h2>
           <Card className="p-6">
             <p className="text-gray-700">
-              Aspiring Python Developer with expertise in programming, software development, and analytics. 
-              Proficient in Python, with practical experience in academic projects, internships, and certifications. 
-              Adept at delivering innovative solutions with a commitment to continuous learning.
+              Motivated and detail-oriented Python Developer with hands-on experience in building real-world applications. 
+              Passionate about data science, AI, and automation. Demonstrates strong problem-solving skills, 
+              a keen interest in continuous learning, and the ability to work both independently and in a team. 
+              Looking to leverage technical knowledge to build efficient and scalable solutions in dynamic environments.
             </p>
           </Card>
         </section>
@@ -46,19 +48,23 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Languages</h3>
-              <p>Python, C</p>
+              <p>Python, C, Java (basic)</p>
             </Card>
             <Card className="p-6">
-              <h3 className="font-semibold mb-2">Frameworks</h3>
-              <p>Pandas, NumPy, Matplotlib</p>
+              <h3 className="font-semibold mb-2">Libraries/Frameworks</h3>
+              <p>Pandas, NumPy, Matplotlib, OpenCV</p>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Tools</h3>
-              <p>Canva, Git, Github</p>
+              <p>Git, GitHub, Canva, MS Excel, PowerPoint</p>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Platforms</h3>
-              <p>Jupyter Notebook, Visual Studio Code</p>
+              <p>Jupyter Notebook, Visual Studio Code, Google Colab</p>
+            </Card>
+            <Card className="p-6">
+              <h3 className="font-semibold mb-2">Other Skills</h3>
+              <p>Strong analytical skills, report writing, version control, basic UI/UX design</p>
             </Card>
           </div>
         </section>
@@ -76,7 +82,11 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-lg mb-1">SRM Madurai College of Engineering and Technology</h3>
               <p className="mb-2">Bachelor of Technology in Information Technology</p>
-              <p className="text-blue-600">CGPA: 8.22</p>
+              <p className="text-blue-600 mb-2">CGPA: 8.22</p>
+              <ul className="list-disc list-inside space-y-1 text-gray-700">
+                <li>Courses: Data Structures, Algorithms, Object-Oriented Programming, Data Science, Database Management</li>
+                <li>Participated in technical symposiums and coding challenges</li>
+              </ul>
             </Card>
             <Card className="p-6">
               <div className="flex items-center gap-2 text-blue-600 mb-2">
@@ -85,7 +95,11 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-lg mb-1">Rajan Matric Higher Secondary School</h3>
               <p className="mb-2">Computer Science - Mathematics</p>
-              <p className="text-blue-600">Percentage: 87.3%</p>
+              <p className="text-blue-600 mb-2">Percentage: 87.3%</p>
+              <ul className="list-disc list-inside space-y-1 text-gray-700">
+                <li>Developed logical reasoning and computational thinking</li>
+                <li>Achieved high scores in computer science and mathematics subjects</li>
+              </ul>
             </Card>
           </div>
         </section>
@@ -93,20 +107,33 @@ const Index = () => {
         {/* Training Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <BookOpen className="text-blue-600" /> TRAINING
+            <BookOpen className="text-blue-600" /> TRAINING & WORKSHOPS
           </h2>
-          <Card className="p-6">
-            <div className="flex items-center gap-2 text-blue-600 mb-2">
-              <Calendar size={16} />
-              <span>January 20, 2025 – February 3, 2025</span>
-            </div>
-            <h3 className="font-semibold text-lg mb-2">Quantanics Techserv PVT LTD</h3>
-            <h4 className="font-medium mb-2">Python and OpenCV</h4>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Applied Python and OpenCV to practical application in computer vision.</li>
-              <li>Demonstrated a proactive approach to problem-solving and a keen interest in learning.</li>
-            </ul>
-          </Card>
+          <div className="space-y-6">
+            <Card className="p-6">
+              <div className="flex items-center gap-2 text-blue-600 mb-2">
+                <Calendar size={16} />
+                <span>January 20, 2025 – February 3, 2025</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Quantanics Techserv PVT LTD - Python & OpenCV Intern</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Built image-processing programs to detect motion and extract object boundaries</li>
+                <li>Explored basic machine vision tasks including face and eye detection</li>
+                <li>Learned the integration of NumPy with OpenCV for advanced array manipulations</li>
+                <li>Collaborated with team members to debug and present final project reports</li>
+              </ul>
+            </Card>
+            <Card className="p-6">
+              <h3 className="font-semibold text-lg mb-2">Workshop on Generative AI and Machine Learning</h3>
+              <p className="mb-2">Kalasalingam Academy of Research and Education</p>
+              <p className="text-gray-700">Gained hands-on experience and insights into Generative AI models and real-world ML applications</p>
+            </Card>
+            <Card className="p-6">
+              <h3 className="font-semibold text-lg mb-2">Technical Symposium – Techutserv</h3>
+              <p className="mb-2">Thiyagarajar College of Engineering, Madurai</p>
+              <p className="text-gray-700">Engaged in events and technical sessions focused on emerging trends in software development and data science</p>
+            </Card>
+          </div>
         </section>
 
         {/* Certifications Section */}
@@ -117,19 +144,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6">
               <h3 className="font-semibold mb-2">NPTEL</h3>
-              <p>Python for Data Science (75%)</p>
+              <p className="text-gray-700">Python for Data Science (75%) - Learned data preprocessing, analysis techniques, and hands-on exercises using Pandas and Matplotlib</p>
             </Card>
             <Card className="p-6">
-              <h3 className="font-semibold mb-2">SRMIST</h3>
-              <p>Data Science Tools for AI Application, Object Oriented Programming in Python</p>
+              <h3 className="font-semibold mb-2">SRM IST</h3>
+              <p className="text-gray-700">Object-Oriented Programming in Python & Data Science Tools for AI Application - Applied OOP concepts and gained familiarity with AI tools</p>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Internshala</h3>
-              <p>Placement Training (96%)</p>
+              <p className="text-gray-700">Placement Training (96%) - Completed modules on group discussion, resume building, communication skills, and mock interviews</p>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Coursera</h3>
-              <p>Introduction to MS Excel</p>
+              <p className="text-gray-700">Introduction to MS Excel - Acquired foundational Excel skills including conditional formatting, charts, data filtering, and formulas</p>
             </Card>
           </div>
         </section>
@@ -144,9 +171,12 @@ const Index = () => {
               <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
                 <QrCode className="text-blue-600" /> QR CODE GENERATOR
               </h3>
-              <p className="text-gray-700 mb-2">
-                A web application that generates QR codes dynamically for various types of content.
-              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                <li>Built a Python-based QR code generator using qrcode and Tkinter libraries</li>
+                <li>Allowed users to input text, URLs, email IDs, or upload images and convert them into QR codes</li>
+                <li>Enabled real-time QR code preview and download functionality</li>
+                <li>Useful for digital visiting cards, website links, and product tagging</li>
+              </ul>
               <div className="flex gap-4">
                 <a 
                   href="https://github.com/Pradesha2005/QRCODE-GENRATOR" 
@@ -160,7 +190,11 @@ const Index = () => {
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-2">TEXT CONVERTER</h3>
-              <p className="text-gray-700 mb-2">Convert text or uploaded text file into downloadable PDF or Word file via a simple interface.</p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                <li>Created a user-friendly GUI with Tkinter for text-to-document conversion</li>
+                <li>Supported .txt file uploads and implemented error handling with pop-up alerts</li>
+                <li>Integrated options for font styling, line spacing, and document export</li>
+              </ul>
               <div className="flex gap-4">
                 <a 
                   href="https://marvelous-stroopwafel-8d90d6.netlify.app" 
@@ -169,6 +203,24 @@ const Index = () => {
                   className="text-blue-600 hover:underline"
                 >
                   Live Demo
+                </a>
+              </div>
+            </Card>
+            <Card className="p-6">
+              <h3 className="font-semibold text-lg mb-2">TECHNOLOGY BLOG</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                <li>Developed and hosted a personal blog using HTML, CSS, and Netlify</li>
+                <li>Shared weekly posts on AI, machine learning, cloud computing, and blockchain</li>
+                <li>Designed for mobile responsiveness and fast loading times</li>
+              </ul>
+              <div className="flex gap-4">
+                <a 
+                  href="https://quiet-panda-84ed62.netlify.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:underline"
+                >
+                  Visit Blog
                 </a>
               </div>
             </Card>
@@ -181,7 +233,12 @@ const Index = () => {
             <Award className="text-blue-600" /> ACHIEVEMENTS
           </h2>
           <Card className="p-6">
-            <p>1st prize, Intra college Science fair – Motion Tracking Project (Quantanics Training)</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>1st Prize, Intra-College Science Fair for "Motion Tracking Project" under Quantanics training</li>
+              <li>Participated in hackathons and workshops on AI, Data Science, and Python programming</li>
+              <li>Contributed to GitHub repositories and collaborated on team coding challenges</li>
+              <li>Actively maintained a tech blog and showcased project portfolios on GitHub and LinkedIn</li>
+            </ul>
           </Card>
         </section>
       </main>
