@@ -14,20 +14,22 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-8">
             <div className="text-custom-text space-y-6 max-w-2xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-                Hi, I'm <span className="text-black">PRADESHA S</span>
+                Hi, I'm <span className="text-black">Pradesha S</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-800">
-                Aspiring Python Developer
+                Aspiring Python Developer | Creative UI/UX Enthusiast
               </h2>
               <p className="text-gray-900 text-lg">
-                Passionate about data science, AI, and automation. Building efficient and scalable solutions in dynamic environments.
+                Passionate about building smart, data-driven solutions with Python. 
+                I enjoy turning ideas into real-world projects — crafting user-friendly 
+                websites with both code and intuitive no-code tools.
               </p>
               <div className="flex gap-4">
                 <Button variant="outline" className="text-black border-black hover:bg-black/10" asChild>
-                  <a href="#contact">Contact Me</a>
+                  <a href="#projects">View Projects</a>
                 </Button>
                 <Button className="bg-[#FFA500] text-white hover:bg-[#FFA500]/90" asChild>
-                  <a href="#projects">View Projects</a>
+                  <a href="#contact">Contact Me</a>
                 </Button>
               </div>
             </div>
