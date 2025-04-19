@@ -1,30 +1,45 @@
-
-import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
+import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import Logo from "@/components/Logo";
+import Navigation from "@/components/Navigation";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">PRADESHA S</h1>
-          <h2 className="text-2xl md:text-3xl mb-6">ASPIRING PYTHON DEVELOPER</h2>
-          <div className="flex gap-4">
-            <a href="mailto:pradesha3112@gmail.com" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
-              <Mail size={20} /> Email
-            </a>
-            <a href="https://www.linkedin.com/in/pradesha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
-              <Linkedin size={20} /> LinkedIn
-            </a>
-            <a href="https://github.com/Pradesha3112" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
-              <Github size={20} /> Github
-            </a>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
+      {/* Hero Section with Navigation */}
+      <header className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90" />
+        <div className="relative container mx-auto px-4 pt-6">
+          <Navigation />
+          <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-8">
+            <div className="text-white space-y-6 max-w-2xl">
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+                Hi, I'm <span className="text-blue-300">PRADESHA S</span>
+              </h1>
+              <h2 className="text-2xl md:text-3xl text-gray-200">
+                Aspiring Python Developer
+              </h2>
+              <p className="text-gray-300 text-lg">
+                Passionate about data science, AI, and automation. Building efficient and scalable solutions in dynamic environments.
+              </p>
+              <div className="flex gap-4">
+                <Button variant="outline" className="text-white border-white hover:bg-white/10" asChild>
+                  <a href="#contact">Contact Me</a>
+                </Button>
+                <Button className="bg-blue-500 hover:bg-blue-600" asChild>
+                  <a href="#projects">View Projects</a>
+                </Button>
+              </div>
+            </div>
+            <div className="flex-shrink-0">
+              <Logo />
+            </div>
           </div>
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-16 space-y-24">
         {/* Objective Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
@@ -243,22 +258,22 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center gap-6">
-            <a href="mailto:pradesha3112@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <Mail size={20} />
-              <span>pradesha3112@gmail.com</span>
-            </a>
-            <a href="https://www.linkedin.com/in/pradesha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <Linkedin size={20} />
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/Pradesha3112" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <Github size={20} />
-              <span>GitHub</span>
-            </a>
+      {/* Footer with updated styling */}
+      <footer className="bg-gray-900 py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <Logo />
+            <div className="flex gap-6">
+              <a href="mailto:pradesha3112@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                <Mail size={24} />
+              </a>
+              <a href="https://www.linkedin.com/in/pradesha" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Linkedin size={24} />
+              </a>
+              <a href="https://github.com/Pradesha3112" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Github size={24} />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
