@@ -179,6 +179,18 @@ const Index = () => {
                 </a>
               </div>
             </Card>
+
+            <Card className="p-6">
+              <h3 className="font-semibold text-lg mb-2">Modern IT Showcase – Poster UI Design</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                <li>Created a visually appealing and informative poster for the Information Technology department using Canva</li>
+                <li>Focused on clarity, layout, and design balance to effectively communicate complex IT concepts</li>
+                <li>Highlighted key IT concepts including programming, networking, cybersecurity, AI, and data science</li>
+                <li>Demonstrated ability to merge design thinking with technology-focused content using no-code tools</li>
+                <li>Designed for academic and promotional use, showcasing information hierarchy and visual storytelling</li>
+              </ul>
+            </Card>
+
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-2">TEXT CONVERTER</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
@@ -197,6 +209,7 @@ const Index = () => {
                 </a>
               </div>
             </Card>
+
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-2">TECHNOLOGY BLOG</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
