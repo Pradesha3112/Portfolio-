@@ -6,28 +6,28 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#F1F0FB]">
+    <div className="min-h-screen bg-[#F1F0FB] text-custom-text">
       {/* Hero Section with Navigation */}
       <header className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFA500]/90 to-[#FF8C00]/90" />
         <div className="relative container mx-auto px-4 pt-6">
           <Navigation />
           <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-8">
-            <div className="text-white space-y-6 max-w-2xl">
+            <div className="text-custom-text space-y-6 max-w-2xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-                Hi, I'm <span className="text-blue-300">PRADESHA S</span>
+                Hi, I'm <span className="text-black">PRADESHA S</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl text-gray-200">
+              <h2 className="text-2xl md:text-3xl text-gray-800">
                 Aspiring Python Developer
               </h2>
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-900 text-lg">
                 Passionate about data science, AI, and automation. Building efficient and scalable solutions in dynamic environments.
               </p>
               <div className="flex gap-4">
-                <Button variant="outline" className="text-white border-white hover:bg-white/10" asChild>
+                <Button variant="outline" className="text-black border-black hover:bg-black/10" asChild>
                   <a href="#contact">Contact Me</a>
                 </Button>
-                <Button className="bg-blue-500 hover:bg-blue-600" asChild>
+                <Button className="bg-[#FFA500] text-white hover:bg-[#FFA500]/90" asChild>
                   <a href="#projects">View Projects</a>
                 </Button>
               </div>
@@ -39,7 +39,7 @@ const Index = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-16 space-y-24">
+      <main className="container mx-auto px-4 py-16 space-y-24 text-custom-text">
         {/* Objective Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">

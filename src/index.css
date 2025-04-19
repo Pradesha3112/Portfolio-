@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +6,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    
+
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
@@ -97,7 +96,7 @@
   }
 
   body {
-    @apply bg-[#F1F0FB] text-foreground;
+    @apply bg-[#F1F0FB] text-custom-text;
   }
 }
 
