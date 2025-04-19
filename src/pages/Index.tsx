@@ -40,7 +40,7 @@ const Index = () => {
 
       <main className="container mx-auto px-4 py-16 space-y-24 text-custom-text">
         {/* Objective Section */}
-        <section className="mb-12">
+        <section id="objective" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Briefcase className="text-blue-600" /> OBJECTIVE
           </h2>
@@ -55,7 +55,7 @@ const Index = () => {
         </section>
 
         {/* Skills Section */}
-        <section className="mb-12">
+        <section id="skills" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Code className="text-blue-600" /> SKILLS
           </h2>
@@ -84,7 +84,7 @@ const Index = () => {
         </section>
 
         {/* Education Section */}
-        <section className="mb-12">
+        <section id="education" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <School className="text-blue-600" /> EDUCATION
           </h2>
@@ -119,7 +119,7 @@ const Index = () => {
         </section>
 
         {/* Training Section */}
-        <section className="mb-12">
+        <section id="training" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <BookOpen className="text-blue-600" /> TRAINING & WORKSHOPS
           </h2>
@@ -150,33 +150,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Certifications Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <Award className="text-blue-600" /> CERTIFICATIONS
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="p-6">
-              <h3 className="font-semibold mb-2">NPTEL</h3>
-              <p className="text-gray-700">Python for Data Science (75%) - Learned data preprocessing, analysis techniques, and hands-on exercises using Pandas and Matplotlib</p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="font-semibold mb-2">SRM IST</h3>
-              <p className="text-gray-700">Object-Oriented Programming in Python & Data Science Tools for AI Application - Applied OOP concepts and gained familiarity with AI tools</p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="font-semibold mb-2">Internshala</h3>
-              <p className="text-gray-700">Placement Training (96%) - Completed modules on group discussion, resume building, communication skills, and mock interviews</p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="font-semibold mb-2">Coursera</h3>
-              <p className="text-gray-700">Introduction to MS Excel - Acquired foundational Excel skills including conditional formatting, charts, data filtering, and formulas</p>
-            </Card>
-          </div>
-        </section>
-
         {/* Projects Section */}
-        <section className="mb-12">
+        <section id="projects" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Code className="text-blue-600" /> PROJECTS
           </h2>
@@ -242,7 +217,7 @@ const Index = () => {
         </section>
 
         {/* Achievements Section */}
-        <section className="mb-12">
+        <section id="achievements" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Award className="text-blue-600" /> ACHIEVEMENTS
           </h2>
@@ -257,8 +232,8 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer with updated styling */}
-      <footer className="bg-gray-900 py-12">
+      {/* Footer with Contact Section */}
+      <footer id="contact" className="bg-gray-900 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <Logo />
