@@ -168,7 +168,17 @@ const Index = () => {
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-2">TEXT CONVERTER</h3>
-              <p className="text-gray-700">Convert text or uploaded text file into the downloadable PDF or Word file via simple interface.</p>
+              <p className="text-gray-700 mb-2">Convert text or uploaded text file into downloadable PDF or Word file via a simple interface.</p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://marvelous-stroopwafel-8d90d6.netlify.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:underline"
+                >
+                  Live Demo
+                </a>
+              </div>
             </Card>
           </div>
         </section>
