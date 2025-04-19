@@ -1,4 +1,3 @@
-
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -7,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#F1F0FB]">
       {/* Hero Section with Navigation */}
       <header className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90" />
