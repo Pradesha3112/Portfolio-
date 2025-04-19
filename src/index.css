@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
@@ -96,6 +96,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-[#1A1F2C] via-[#2A2E3C] to-[#403E43] text-foreground;
   }
 }

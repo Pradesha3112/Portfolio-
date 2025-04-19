@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
+    <div className="min-h-screen">
       {/* Hero Section with Navigation */}
       <header className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90" />
