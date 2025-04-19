@@ -1,5 +1,4 @@
-
-import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase } from "lucide-react";
+import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Index = () => {
@@ -142,8 +141,30 @@ const Index = () => {
           </h2>
           <div className="space-y-6">
             <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">MOTION TRACKING AND ANALYSIS USING OPENCV</h3>
-              <p className="text-gray-700">Tracked object movement in videos to calculate velocity, acceleration and direction.</p>
+              <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+                <QrCode className="text-blue-600" /> QR CODE GENERATOR
+              </h3>
+              <p className="text-gray-700 mb-2">
+                A web application that generates QR codes dynamically for various types of content.
+              </p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://github.com/Pradesha2005/QRCODE-GENRATOR" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:underline"
+                >
+                  GitHub Repository
+                </a>
+                <a 
+                  href="https://marvelous-stroopwafel-8d90d6.netlify.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:underline"
+                >
+                  Live Demo
+                </a>
+              </div>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-2">TEXT CONVERTER</h3>
