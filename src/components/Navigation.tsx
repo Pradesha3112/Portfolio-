@@ -9,7 +9,7 @@ const Navigation = () => (
       {["About", "Skills", "Education", "Projects", "Contact"].map((item) => (
         <NavigationMenuItem key={item}>
           <NavigationMenuLink 
-            className={navigationMenuTriggerStyle() + " text-white hover:text-blue-200"} 
+            className={navigationMenuTriggerStyle() + " text-black hover:text-gray-700"} 
             href={`#${item.toLowerCase()}`}
           >
             {item}
