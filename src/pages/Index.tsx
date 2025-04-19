@@ -1,8 +1,11 @@
+
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
+import ProjectDialog from "@/components/ProjectDialog";
+import { projectsData } from "@/data/projects";
 
 const Index = () => {
   return (
@@ -157,77 +160,26 @@ const Index = () => {
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Code className="text-blue-600" /> PROJECTS
           </h2>
-          <div className="space-y-6">
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                <QrCode className="text-blue-600" /> QR CODE GENERATOR
-              </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                <li>Built a Python-based QR code generator using qrcode and Tkinter libraries</li>
-                <li>Allowed users to input text, URLs, email IDs, or upload images and convert them into QR codes</li>
-                <li>Enabled real-time QR code preview and download functionality</li>
-                <li>Useful for digital visiting cards, website links, and product tagging</li>
-              </ul>
-              <div className="flex gap-4">
-                <a 
-                  href="https://github.com/Pradesha2005/QRCODE-GENRATOR" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:underline"
-                >
-                  GitHub Repository
-                </a>
-              </div>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">Modern IT Showcase – Poster UI Design</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                <li>Created a visually appealing and informative poster for the Information Technology department using Canva</li>
-                <li>Focused on clarity, layout, and design balance to effectively communicate complex IT concepts</li>
-                <li>Highlighted key IT concepts including programming, networking, cybersecurity, AI, and data science</li>
-                <li>Demonstrated ability to merge design thinking with technology-focused content using no-code tools</li>
-                <li>Designed for academic and promotional use, showcasing information hierarchy and visual storytelling</li>
-              </ul>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">TEXT CONVERTER</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                <li>Created a user-friendly GUI with Tkinter for text-to-document conversion</li>
-                <li>Supported .txt file uploads and implemented error handling with pop-up alerts</li>
-                <li>Integrated options for font styling, line spacing, and document export</li>
-              </ul>
-              <div className="flex gap-4">
-                <a 
-                  href="https://marvelous-stroopwafel-8d90d6.netlify.app" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:underline"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">TECHNOLOGY BLOG</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                <li>Developed and hosted a personal blog using HTML, CSS, and Netlify</li>
-                <li>Shared weekly posts on AI, machine learning, cloud computing, and blockchain</li>
-                <li>Designed for mobile responsiveness and fast loading times</li>
-              </ul>
-              <div className="flex gap-4">
-                <a 
-                  href="https://quiet-panda-84ed62.netlify.app" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:underline"
-                >
-                  Visit Blog
-                </a>
-              </div>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-6">
+            {projectsData.map((project) => (
+              <ProjectDialog key={project.id} project={project}>
+                <Card className="p-6 cursor-pointer hover:shadow-md transition-shadow">
+                  <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+                    {project.id === "qrcode-generator" && <QrCode className="text-blue-600" />}
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-700 mb-4 line-clamp-3">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tools.map((tool, index) => (
+                      <Badge key={index} variant="outline" className="text-xs">
+                        {tool}
+                      </Badge>
+                    ))}
+                  </div>
+                  <Button size="sm" className="mt-2">View Details</Button>
+                </Card>
+              </ProjectDialog>
+            ))}
           </div>
         </section>
 
