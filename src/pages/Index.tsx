@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode, Terminal, Languages } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -17,7 +18,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-8">
             <div className="text-custom-text space-y-6 max-w-2xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-                Hi, I'm <span className="text-black">Pradesha S</span>
+                Hi, I'm <span className="text-[#F97316]">Pradesha S</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-800">
                 Creative Tech Learner | Python Enthusiast
