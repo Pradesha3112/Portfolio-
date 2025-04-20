@@ -1,3 +1,4 @@
+
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -9,7 +10,7 @@ import { projectsData } from "@/data/projects";
 
 const Index = () => {
   return (
-    <div className="min-h-screen text-custom-text">
+    <div className="min-h-screen text-custom-text border-8 border-[#FFA500]/50 rounded-3xl max-w-screen-xl mx-auto p-2 shadow-lg">
       {/* Hero Section with Navigation */}
       <header className="relative">
         <div className="container mx-auto px-4 pt-6">
@@ -232,3 +233,4 @@ const Index = () => {
 };
 
 export default Index;
+
