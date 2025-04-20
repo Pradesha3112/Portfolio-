@@ -1,4 +1,3 @@
-
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -84,7 +83,7 @@ const Index = () => {
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Other Skills</h3>
-              <p>Strong analytical skills, report writing, version control, basic UI/UX design</p>
+              <p>Strong analytical skills, report writing, Content Writing, Creative Writing, Blog Writing, basic UI/UX design</p>
             </Card>
           </div>
         </section>
@@ -233,4 +232,3 @@ const Index = () => {
 };
 
 export default Index;
-
