@@ -1,4 +1,3 @@
-
 import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -124,7 +123,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Training Section */}
+        {/* Training & Workshops Section */}
         <section id="training" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <BookOpen className="text-blue-600" /> TRAINING & WORKSHOPS
@@ -143,16 +142,25 @@ const Index = () => {
                 <li>Collaborated with team members to debug and present final project reports</li>
               </ul>
             </Card>
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">Workshop on Generative AI and Machine Learning</h3>
-              <p className="mb-2">Kalasalingam Academy of Research and Education</p>
-              <p className="text-gray-700">Gained hands-on experience and insights into Generative AI models and real-world ML applications</p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="font-semibold text-lg mb-2">Technical Symposium – Techutserv</h3>
-              <p className="mb-2">Thiyagarajar College of Engineering, Madurai</p>
-              <p className="text-gray-700">Engaged in events and technical sessions focused on emerging trends in software development and data science</p>
-            </Card>
+
+            {/* Academic Engagement Subsection */}
+            <div className="mt-6">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                <School className="text-blue-600" /> Academic Engagement
+              </h3>
+              <div className="space-y-4">
+                <Card className="p-6">
+                  <h4 className="font-semibold text-lg mb-2">Workshop on Generative AI and Machine Learning</h4>
+                  <p className="mb-2 text-gray-900">Kalasalingam Academy of Research and Education</p>
+                  <p className="text-gray-700">• Gained hands-on experience and insights into Generative AI models and real-world ML applications.</p>
+                </Card>
+                <Card className="p-6">
+                  <h4 className="font-semibold text-lg mb-2">Technical Symposium – Techutserv</h4>
+                  <p className="mb-2 text-gray-900">Thiyagarajar College of Engineering, Madurai</p>
+                  <p className="text-gray-700">• Engaged in events and technical sessions focused on emerging trends in software development and data science.</p>
+                </Card>
+              </div>
+            </div>
           </div>
         </section>
 
