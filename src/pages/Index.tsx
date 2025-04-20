@@ -20,7 +20,7 @@ const Index = () => {
                 Hi, I'm <span className="text-black">Pradesha S</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-800">
-                Aspiring Python Developer | Creative UI/UX Enthusiast
+                Creative Tech Learner | Python Enthusiast
               </h2>
               <p className="text-gray-900 text-lg">
                 Passionate about building smart, data-driven solutions with Python. 
