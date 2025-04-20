@@ -44,7 +44,8 @@ export const projectsData: ProjectDetails[] = [
     ],
     learnings: "Gained experience in developing practical Python applications with GUIs and implementing third-party libraries for real-world use cases.",
     links: {
-      github: "https://github.com/Pradesha2005/QRCODE-GENRATOR"
+      github: "https://github.com/Pradesha2005/QRCODE-GENRATOR",
+      download: "https://github.com/Pradesha2005/QRCODE-GENRATOR/archive/refs/heads/main.zip"
     },
     date: "January 2023",
     tags: ["#Python", "#QRCode", "#GUI", "#ImageProcessing"]
@@ -67,7 +68,8 @@ export const projectsData: ProjectDetails[] = [
     ],
     learnings: "Developed skills in working with file uploads and text processing in web applications while focusing on user experience design.",
     links: {
-      live: "https://marvelous-stroopwafel-8d90d6.netlify.app"
+      live: "https://marvelous-stroopwafel-8d90d6.netlify.app",
+      download: "https://marvelous-stroopwafel-8d90d6.netlify.app/text-converter.zip"
     },
     date: "March 2023",
     tags: ["#WebDevelopment", "#TextProcessing", "#JavaScript"]
@@ -90,7 +92,8 @@ export const projectsData: ProjectDetails[] = [
     ],
     learnings: "Improved my technical writing skills and learned how to create engaging, informative content while implementing responsive design principles.",
     links: {
-      live: "https://quiet-panda-84ed62.netlify.app"
+      live: "https://quiet-panda-84ed62.netlify.app",
+      download: "https://quiet-panda-84ed62.netlify.app/blog-template.zip"
     },
     date: "August 2023 - Present",
     tags: ["#TechBlog", "#WebDevelopment", "#ContentCreation"]
