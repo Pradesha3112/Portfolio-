@@ -5,6 +5,7 @@ import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import ProjectDialog from "@/components/ProjectDialog";
+import { Badge } from "@/components/ui/badge";
 import { projectsData } from "@/data/projects";
 
 const Index = () => {
