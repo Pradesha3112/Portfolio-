@@ -20,6 +20,7 @@ export const projectsData: ProjectDetails[] = [
     learnings: "Learned how to combine clear technical information with modern design elements and how to use Canva effectively for academic projects.",
     links: {
       live: "/lovable-uploads/85cf6d27-f705-4abb-a800-33e38649ab5c.png",
+      download: "/lovable-uploads/85cf6d27-f705-4abb-a800-33e38649ab5c.png"
     },
     feedback: "The poster effectively simplifies complex IT concepts through visual design. Great use of information hierarchy.",
     date: "May 2023",

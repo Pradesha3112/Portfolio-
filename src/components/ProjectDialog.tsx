@@ -1,4 +1,3 @@
-
 import React from "react";
 import { 
   Dialog,
@@ -133,10 +132,27 @@ const ProjectDialog = ({ project, children }: ProjectDialogProps) => {
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 pt-2">
             {project.links?.live && (
-              <Button variant="outline" className="gap-2" onClick={() => window.open(project.links?.live, '_blank')} asChild>
+              <Button 
+                variant="outline" 
+                className="gap-2" 
+                onClick={() => window.open(project.links?.live, '_blank')} 
+                asChild
+              >
                 <a target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={16} />
                   View Live
+                </a>
+              </Button>
+            )}
+            {project.links?.download && (
+              <Button 
+                className="gap-2 bg-[#FFA500] text-white hover:bg-[#FFA500]/90" 
+                onClick={() => window.open(project.links?.download, '_blank')} 
+                asChild
+              >
+                <a target="_blank" rel="noopener noreferrer">
+                  <Download size={16} />
+                  Download
                 </a>
               </Button>
             )}
@@ -145,14 +161,6 @@ const ProjectDialog = ({ project, children }: ProjectDialogProps) => {
                 <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={16} />
                   GitHub Repo
-                </a>
-              </Button>
-            )}
-            {project.links?.download && (
-              <Button className="gap-2 bg-[#FFA500] text-white hover:bg-[#FFA500]/90" asChild>
-                <a href={project.links.download} target="_blank" rel="noopener noreferrer">
-                  <Download size={16} />
-                  Download
                 </a>
               </Button>
             )}
