@@ -23,9 +23,7 @@ const Index = () => {
                 Creative Tech Learner | Python Enthusiast
               </h2>
               <p className="text-gray-900 text-lg">
-                Passionate about building smart, data-driven solutions with Python. 
-                I enjoy turning ideas into real-world projects — crafting user-friendly 
-                websites with both code and intuitive no-code tools.
+                Passionate about Python and creating smart, user-friendly web and data solutions.
               </p>
               <div className="flex gap-4">
                 <Button variant="outline" className="text-black border-black hover:bg-black/10" asChild>
