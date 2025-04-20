@@ -51,10 +51,7 @@ const Index = () => {
           </h2>
           <Card className="p-6">
             <p className="text-gray-700">
-              Motivated and detail-oriented Python Developer with hands-on experience in building real-world applications. 
-              Passionate about data science, AI, and automation. Demonstrates strong problem-solving skills, 
-              a keen interest in continuous learning, and the ability to work both independently and in a team. 
-              Looking to leverage technical knowledge to build efficient and scalable solutions in dynamic environments.
+              Motivated and detail-oriented individual with a solid foundation in programming languages such as Python, C, and Java (basic), and hands-on experience with data analysis libraries including Pandas, NumPy, Matplotlib, and OpenCV. Passionate about leveraging technology to develop efficient, user-friendly, and data-driven solutions. Skilled in using tools like Git, GitHub, Canva, MS Excel, and PowerPoint, and proficient in working on platforms such as Jupyter Notebook, Visual Studio Code, and Google Colab. Adept at content creation with strengths in content writing, blog writing, and creative writing, combined with a basic understanding of UI/UX design. Eager to contribute to innovative projects where I can apply my analytical skills, technical knowledge, and creative abilities to support organizational growth and advance my career as a Python developer or data-driven web solutions specialist.
             </p>
           </Card>
         </section>
