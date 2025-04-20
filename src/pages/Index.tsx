@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode } from "lucide-react";
+import React from 'react';
+import { Mail, Linkedin, Github, Code, BookOpen, Award, School, Calendar, Briefcase, QrCode, Terminal, Languages } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
@@ -10,7 +11,6 @@ import { projectsData } from "@/data/projects";
 const Index = () => {
   return (
     <div className="min-h-screen text-custom-text border-8 border-[#FFA500]/50 rounded-3xl max-w-screen-xl mx-auto p-2 shadow-lg">
-      {/* Hero Section with Navigation */}
       <header className="relative">
         <div className="container mx-auto px-4 pt-6">
           <Navigation />
@@ -42,7 +42,6 @@ const Index = () => {
       </header>
 
       <main className="container mx-auto px-4 py-16 space-y-24 text-custom-text">
-        {/* Objective Section */}
         <section id="objective" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Briefcase className="text-blue-600" /> OBJECTIVE
@@ -54,15 +53,14 @@ const Index = () => {
           </Card>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <Code className="text-blue-600" /> SKILLS
+            <Languages className="text-blue-600" /> SKILLS
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Languages</h3>
-              <p>Python, C, Java (basic)</p>
+              <p>Python, C (basics)</p>
             </Card>
             <Card className="p-6">
               <h3 className="font-semibold mb-2">Libraries/Frameworks</h3>
@@ -83,7 +81,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Education Section */}
         <section id="education" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <School className="text-blue-600" /> EDUCATION
@@ -118,7 +115,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Training & Workshops Section */}
         <section id="training" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <BookOpen className="text-blue-600" /> TRAINING & WORKSHOPS
@@ -138,7 +134,6 @@ const Index = () => {
               </ul>
             </Card>
 
-            {/* Academic Engagement Subsection */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
                 <School className="text-blue-600" /> Academic Engagement
@@ -159,7 +154,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Code className="text-blue-600" /> PROJECTS
@@ -187,7 +181,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Achievements Section */}
         <section id="achievements" className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <Award className="text-blue-600" /> ACHIEVEMENTS
@@ -203,7 +196,6 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer with Contact Section */}
       <footer id="contact" className="bg-gray-900 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
