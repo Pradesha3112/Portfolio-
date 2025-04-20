@@ -1,4 +1,3 @@
-
 import { ProjectDetails } from "@/components/ProjectDialog";
 
 export const projectsData: ProjectDetails[] = [
@@ -16,13 +15,11 @@ export const projectsData: ProjectDetails[] = [
       "IT Content Simplification"
     ],
     images: [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&auto=format",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format"
+      "/lovable-uploads/85cf6d27-f705-4abb-a800-33e38649ab5c.png"
     ],
     learnings: "Learned how to combine clear technical information with modern design elements and how to use Canva effectively for academic projects.",
     links: {
-      download: "#",
-      live: "#"
+      live: "/lovable-uploads/85cf6d27-f705-4abb-a800-33e38649ab5c.png",
     },
     feedback: "The poster effectively simplifies complex IT concepts through visual design. Great use of information hierarchy.",
     date: "May 2023",

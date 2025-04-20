@@ -94,7 +94,8 @@ const ProjectDialog = ({ project, children }: ProjectDialogProps) => {
                     <img 
                       src={image} 
                       alt={`${project.title} screenshot ${index + 1}`} 
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto object-cover cursor-pointer"
+                      onClick={() => window.open(image, '_blank')}
                     />
                   </Card>
                 ))}
@@ -132,8 +133,8 @@ const ProjectDialog = ({ project, children }: ProjectDialogProps) => {
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 pt-2">
             {project.links?.live && (
-              <Button variant="outline" className="gap-2" asChild>
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="gap-2" onClick={() => window.open(project.links?.live, '_blank')} asChild>
+                <a target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={16} />
                   View Live
                 </a>
