@@ -1,3 +1,4 @@
+
 import { ProjectDetails } from "@/components/ProjectDialog";
 
 export const projectsData: ProjectDetails[] = [
@@ -23,7 +24,7 @@ export const projectsData: ProjectDetails[] = [
       download: "/lovable-uploads/85cf6d27-f705-4abb-a800-33e38649ab5c.png"
     },
     feedback: "The poster effectively simplifies complex IT concepts through visual design. Great use of information hierarchy.",
-    date: "May 2023",
+    date: "September 2024",
     tags: ["#PosterDesign", "#Canva", "#UIUX", "#IT"]
   },
   {
@@ -47,7 +48,7 @@ export const projectsData: ProjectDetails[] = [
       github: "https://github.com/Pradesha2005/QRCODE-GENRATOR",
       download: "https://github.com/Pradesha2005/QRCODE-GENRATOR/archive/refs/heads/main.zip"
     },
-    date: "January 2023",
+    date: "December 2024",
     tags: ["#Python", "#QRCode", "#GUI", "#ImageProcessing"]
   },
   {
@@ -71,15 +72,15 @@ export const projectsData: ProjectDetails[] = [
       live: "https://marvelous-stroopwafel-8d90d6.netlify.app",
       download: "https://marvelous-stroopwafel-8d90d6.netlify.app/text-converter.zip"
     },
-    date: "March 2023",
+    date: "March 2025",
     tags: ["#WebDevelopment", "#TextProcessing", "#JavaScript"]
   },
   {
     id: "technology-blog",
-    title: "TECHNOLOGY BLOG",
+    title: "TECH BLOG",
     type: "Blog Website",
     tools: ["HTML", "CSS", "Netlify"],
-    description: "Developed and hosted a personal technology blog focused on AI, machine learning, cloud computing, and blockchain topics, designed with responsive layouts and optimal reading experience.",
+    description: "Developed and hosted a personal tech blog focused on AI, machine learning, cloud computing, and blockchain topics, designed with responsive layouts and optimal reading experience.",
     skills: [
       "Web Development",
       "Content Creation",
@@ -95,7 +96,7 @@ export const projectsData: ProjectDetails[] = [
       live: "https://quiet-panda-84ed62.netlify.app",
       download: "https://quiet-panda-84ed62.netlify.app/blog-template.zip"
     },
-    date: "August 2023 - Present",
+    date: "April 2025",
     tags: ["#TechBlog", "#WebDevelopment", "#ContentCreation"]
   }
 ];
